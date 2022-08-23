@@ -59,7 +59,7 @@
         ?>
         <pre>
             <?php 
-                echo $alumns[$i]['name']. ' '. $alumns[$i]['surname']. array_sum($sumVote);
+                echo $alumns[$i]['name']. ' '. $alumns[$i]['surname']. ' | '.  array_sum($sumVote) / 4;
             ?>
         </pre>
         <?php 
