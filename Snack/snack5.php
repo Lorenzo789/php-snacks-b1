@@ -48,13 +48,31 @@
                     'vote' => [ 8, 5, 8, 9],
                 ],
             ];
+
+            $sumVote = [];
         ?>
 
+        <?php 
+            for ($i=0; $i < count($alumns); $i++) { 
+
+                for ($i=0; $i < $alumns[$i]['vote']; $i++) { 
+                    
+                    $sumVote = $alumns[$i]['vote'];
+
+                    array_sum($sumVote);
+
+                    var_dump(array_sum($sumVote));
+
+                }
+        ?>
         <pre>
             <?php 
-                var_dump($alumns[0]['name']);
+                echo $alumns[$i]['name']. ' '. $alumns[$i]['surname']. array_sum($sumVote);
             ?>
         </pre>
+        <?php 
+            };
+        ?>
 
     </section>
 </body>
