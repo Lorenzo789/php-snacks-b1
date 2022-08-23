@@ -9,29 +9,31 @@
 <body>
     <!-- Creare un array con 15 numeri casuali, tenendo conto che l'array non dovrà contenere lo stesso numero più di una volta -->
 
-    <?php 
-        $array = [];
+    <section>
+        <?php 
+            $array = [];
 
-        while (count($array) < 15) { 
+            while (count($array) < 15) { 
 
-            $random = rand(1,15);
+                $random = rand(1,15);
 
-            
-            if (!in_array($random, $array)) {
                 
-                array_push($array, $random);
-                
-            }
-        };
+                if (!in_array($random, $array)) {
+                    
+                    array_push($array, $random);
+                    
+                }
+            };
 
-    ?>
+        ?>
 
-    <div>
         <pre>
             <?php 
                 var_dump($array);
             ?>
         </pre>
-    </div>
+
+    </section>
+
 </body>
 </html>
