@@ -54,16 +54,8 @@
 
         <?php 
             for ($i=0; $i < count($alumns); $i++) { 
-
-                for ($i=0; $i < $alumns[$i]['vote']; $i++) { 
                     
-                    $sumVote = $alumns[$i]['vote'];
-
-                    array_sum($sumVote);
-
-                    var_dump(array_sum($sumVote));
-
-                }
+                $sumVote = $alumns[$i]['vote'];
         ?>
         <pre>
             <?php 
